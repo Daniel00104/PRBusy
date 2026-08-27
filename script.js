@@ -38,3 +38,31 @@ document.addEventListener('click', function (event) {
 	}
 });
 
+document.querySelectorAll('[data-toggle="tab"]').forEach(function (tab) {
+	tab.addEventListener('click', function (event) {
+		event.preventDefault();
+
+		var tabList = tab.closest('.nav');
+		var tabContent = tabList && tabList.parentElement.querySelector('.tab-content');
+		var targetSelector = tab.getAttribute('href');
+		var targetPane = tabContent && targetSelector ? tabContent.querySelector(targetSelector) : null;
+
+		if (!tabList || !tabContent || !targetPane) {
+			return;
+		}
+
+		tabList.querySelectorAll('.nav-link').forEach(function (navLink) {
+			navLink.classList.remove('active');
+			navLink.setAttribute('aria-selected', 'false');
+		});
+
+		tabContent.querySelectorAll('.tab-pane').forEach(function (pane) {
+			pane.classList.remove('active', 'show');
+		});
+
+		tab.classList.add('active');
+		tab.setAttribute('aria-selected', 'true');
+		targetPane.classList.add('active', 'show');
+	});
+});
+
