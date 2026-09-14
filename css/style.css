@@ -316,10 +316,11 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 }
 
 .navbar.fixed-top {
-  position: relative;
-  top: auto;
-  right: auto;
-  left: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 /*logo*/
