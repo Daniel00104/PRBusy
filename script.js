@@ -66,3 +66,35 @@ document.querySelectorAll('[data-toggle="tab"]').forEach(function (tab) {
 	});
 });
 
+document.querySelectorAll('.about-faq .accordion').forEach(function (accordion) {
+	var button = accordion.querySelector('.acc-btn');
+	var content = accordion.querySelector('.acc-content');
+
+	if (!button || !content) {
+		return;
+	}
+
+	var isOpen = content.classList.contains('collapsed');
+	button.classList.toggle('active', isOpen);
+	button.setAttribute('role', 'button');
+	button.setAttribute('tabindex', '0');
+	button.setAttribute('aria-expanded', String(isOpen));
+
+	function toggleAccordion() {
+		var willOpen = !content.classList.contains('collapsed');
+		content.classList.toggle('collapsed', willOpen);
+		button.classList.toggle('active', willOpen);
+		button.setAttribute('aria-expanded', String(willOpen));
+	}
+
+	button.addEventListener('click', toggleAccordion);
+	button.addEventListener('keydown', function (event) {
+		if (event.key === 'Enter' || event.key === ' ') {
+			event.preventDefault();
+			toggleAccordion();
+		}
+	});
+});
+
+
+
