@@ -38,6 +38,7 @@ body {
 h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
 h1,h2,h3,h4,h5 {
   font-family: 'Poppins', sans-serif;
+  justify-content: center;
 } 
 
 ul {list-style-type: none;}
@@ -786,7 +787,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 */
 .inner-banner {
   position: relative;
-  background: #0164A7 url(../images/background/background-blue.jpeg) repeat;
+  background: #011420 url(../images/background/background-blue.jpeg) repeat;
 }
 .inner-banner:before {
     content: '';
@@ -4414,7 +4415,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 .purchase-section:before{
   content: '';
   position: absolute;
-  background: rgba(35, 174, 244, 0.98);
+  background: rgba(0, 18, 27, 0.98);
   top: 0;
   bottom: 0;
   left: 0;
@@ -5666,6 +5667,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 .default-section{
   position:relative;
   padding:80px 0px 40px;
+  justify-content:center;
 }
 
 .default-section .column{
@@ -6436,7 +6438,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 
 .featured-section{
   position:relative;
-  background:#ffffff;
+  background:#ffffff
   padding:80px 0px 30px;
 }
 
