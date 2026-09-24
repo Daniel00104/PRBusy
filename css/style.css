@@ -154,12 +154,12 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 
 .thm-btn {
   position: relative;
-  background: #0164A7;
+  background: #000000;
   font-size: 14px;
   line-height: 46px;
   font-weight: 600;
   color: #ffffff;
-  border: 2px solid #0164A7;
+  border: 2px solid #011624;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   display: inline-block;
@@ -168,7 +168,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 }
 .thm-btn:hover {
   background: transparent;
-  color: #0164A7;
+  color: #000000;
   transition: all .5s cubic-bezier(0.4, 0, 1, 1);
 }
 .thm-btn.style-2{
@@ -1766,7 +1766,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 .accordion .acc-btn.active p {
-    color: #0164A7;
+    color: #000000;
 }
 
 .accordion .acc-btn.pr {
@@ -6438,7 +6438,7 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 
 .featured-section{
   position:relative;
-  background:#ffffff
+  background:#000000;
   padding:80px 0px 30px;
 }
 
